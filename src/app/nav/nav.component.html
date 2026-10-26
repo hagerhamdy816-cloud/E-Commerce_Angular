@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bazario</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <form class="d-flex">
+                    <input [(ngModel)]="searchTerm" name="searchTerm" placeholder="Search products..." class="form-control">
+                    <button type="button" (click)="onSearch()" class="btn btn-outline-success">Search</button>
+                </form>
+
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="home" routerLinkActive="active-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="our-products" routerLinkActive="active-link">Our Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="register" routerLinkActive="active-link">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="log-in" routerLinkActive="active-link">LogIn</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="cart" routerLinkActive="active-link"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

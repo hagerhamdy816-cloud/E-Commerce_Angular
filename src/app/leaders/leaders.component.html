@@ -1,0 +1,29 @@
+<div class="container my-5">
+    <h6 class="text-uppercase text-center text-muted">Team</h6>
+    <h1 class="text-center fw-bold">Leadership</h1>
+
+    <div class="row mt-5">
+        <div class="col-md-3 d-flex justify-content-center" *ngFor="let leader of leaders">
+            <div class="card leader-card text-center shadow-sm p-4">
+                <img [src]="leader.image" [alt]="leader.name" class="img-fluid rounded-circle mb-3" />
+                <h5 class="fw-bold">{{ leader.name }}</h5>
+                <p class="position">{{ leader.position }}</p>
+                <p class="text-muted">{{ leader.description }}</p>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                    <a href="#" class="icon-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

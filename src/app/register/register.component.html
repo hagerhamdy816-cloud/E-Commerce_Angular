@@ -1,0 +1,44 @@
+<div class="container py-5">
+    <form [formGroup]="registerForm" (ngSubmit)="submitForm(registerForm)">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" formControlName="firstName" class="form-control mb-2">
+        <div class="alert alert-danger"
+            *ngIf="registerForm.get('firstName')?.errors && registerForm.get('firstName')?.touched">
+            <p *ngIf="registerForm.get('firstName')?.getError('pattern')"></p>
+            <p>First Name invalid</p>
+        </div>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" formControlName="lastName" class="form-control mb-2">
+        <div class="alert alert-danger"
+            *ngIf="registerForm.get('lastName')?.errors && registerForm.get('lastName')?.touched">
+            <p *ngIf="registerForm.get('lastName')?.getError('pattern')"></p>
+            <p>Last Name invalid</p>
+        </div>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" formControlName="email" class="form-control mb-2">
+        <div class="alert alert-danger" *ngIf="registerForm.get('email')?.errors && registerForm.get('email')?.touched">
+            <p *ngIf="registerForm.get('email')?.getError('pattern')"></p>
+            <p>Email invalid</p>
+        </div>
+
+        <label for="birthDate">BirthDate:</label>
+        <input type="date" name="birthDate" id="birthDate" formControlName="birthDate" class="form-control mb-2">
+        <div class="alert alert-danger"
+            *ngIf="registerForm.get('birthDate')?.errors && registerForm.get('birthDate')?.touched">
+            <p *ngIf="registerForm.get('birthDate')?.getError('pattern')"></p>
+            <p>BirthDate invalid</p>
+        </div>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" FormControlName="password" class="form-control mb-2">
+        <div class="alert alert-danger"
+            *ngIf="registerForm.get('password')?.errors && registerForm.get('password')?.touched">
+            <p *ngIf="registerForm.get('password')?.getError('pattern')"></p>
+            <p>Password invalid</p>
+        </div>
+
+        <button class="btn btn-info mt-2" [disabled]="registerForm.invalid">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,47 @@
+/* Footer Background */
+.footer {
+    background-color: #181818;
+    margin-top: 100px !important;
+}
+
+.container{
+    margin-top: 100px !important;
+}
+
+/* Muted Text */
+.text-muted {
+    color: #888 !important;
+}
+
+/* Links */
+.footer a {
+    /* transition: color 0.3s ease, text-shadow 0.3s ease; */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #1abc9c !important;
+}
+
+/* Social Icons */
+.social-icons i {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover i {
+    color: #1abc9c;
+    transform: scale(1.2);
+}
+
+/* Newsletter Button */
+.btn-success {
+    background-color: #1abc9c;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}

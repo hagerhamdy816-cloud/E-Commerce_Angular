@@ -1,0 +1,119 @@
+/* Full-screen height */
+.h-screen {
+    height: 100vh;
+}
+
+/* Background image styles */
+.bg-cover {
+    background-size: cover;
+    /* Ensures the image covers the whole area */
+}
+
+.bg-center {
+    background-position: center center;
+    /* Centers the background image */
+}
+
+/* Position helpers */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Color Overlay */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Flexbox for centering content */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+    /* Vertically center items */
+}
+
+.justify-center {
+    justify-content: center;
+    /* Horizontally center items */
+}
+
+.flex-col {
+    flex-direction: column;
+    /* Stack items vertically */
+}
+
+/* Ensure content takes up full height of the screen */
+.h-full {
+    height: 100%;
+}
+
+/* Text alignment */
+.text-center {
+    text-align: center;
+}
+
+/* Typography and spacing */
+.text-4xl {
+    font-size: 100px;
+}
+.max-w-xl{
+    font-size: 20px;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+/* Button styles */
+button {
+    border: none;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+}
+
+/* Custom Green Button */
+.bg-custom-green {
+    background-color: #1abc9c;
+    /* The custom green color */
+}
+
+.bg-custom-green-dark {
+    background-color: #16a085;
+    /* Darker shade of the custom green for hover */
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #16a085;
+    /* Darker green on hover */
+}
+
+/* Spacing between buttons */
+.ml-4 {
+    margin-left: 1rem;
+}

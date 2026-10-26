@@ -1,0 +1,16 @@
+<div class="services-section">
+    <h3 class="title">Our Services</h3>
+    <h2 class="subtitle">We Offer Services</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let service of services">
+                <div class="service-card">
+                    <div class="icon" [innerHTML]="service.icon"></div>
+                    <h4>{{ service.title }}</h4>
+                    <p>{{ service.description }}</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+.container{
+    margin-top: 200px !important;
+}
+
+/* Image Styling */
+.image-styled {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Title Styling */
+.company-title {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #6c757d;
+}
+
+/* About Heading */
+.about-heading {
+    color: #1abc9c;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph Styling */
+.about-paragraph {
+    color: #6c757d;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+/* Button Styling */
+.custom-btn {
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.custom-btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+    color: #fff;
+}
+
+/* Container Styling */
+.container {
+    padding: 1rem;
+}
+
+p.text-muted {
+    color: #6c757d;
+}
+

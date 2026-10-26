@@ -1,0 +1,6 @@
+<div class="category-filter">
+    <select [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+        <option value="all">All Categories</option>
+        <option *ngFor="let category of categories" [value]="category">{{ category | titlecase }}</option>
+    </select>
+</div>

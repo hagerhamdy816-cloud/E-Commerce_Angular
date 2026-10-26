@@ -1,0 +1,129 @@
+/* .collapse {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 100px;
+    font-weight: 500;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #34495e;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #1abc9c;
+    color: #1abc9c;
+}
+
+.active-link {
+    font-weight: bold;
+    color: #1abc9c !important;
+}
+
+.navbar-brand{
+    font-size: 26px;
+    font-weight: bold;
+    color: #1abc9c !important;
+} */
+
+.navbar {
+    background-color: #f8f9fa;
+    /* Light grey background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+/* Navbar brand */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1abc9c !important;
+    /* Primary color */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #16a085 !important;
+    /* Darker shade on hover */
+}
+
+/* Navigation links */
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #34495e;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+    /* Underline effect */
+}
+
+.navbar-nav .active-link {
+    color: #1abc9c !important;
+    font-weight: bold;
+    border-bottom: 2px solid #1abc9c;
+    /* Underline for active links */
+}
+
+/* Navbar toggler button */
+.navbar-toggler {
+    border-color: #1abc9c;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Navbar collapse adjustments */
+.navbar-collapse {
+    justify-content: flex-end;
+    /* Align items to the right */
+    gap: 1rem;
+    /* Add spacing between nav items */
+}
+
+/* Navbar search bar */
+.navbar .form-control {
+    border-radius: 20px;
+    padding: 8px 15px;
+    width: 250px;
+    border: 2px solid #1abc9c;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .form-control:focus {
+    border-color: #16a085;
+    box-shadow: 0 0 8px rgba(26, 188, 156, 0.5);
+}
+
+/* Search button */
+.navbar .btn-outline-success {
+    border-radius: 20px;
+    border-color: #1abc9c;
+    color: #1abc9c;
+    transition: all 0.3s;
+    margin-left: 5px;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #1abc9c;
+    color: white;
+}
+
+/* Cart icon */
+.navbar .fa-cart-shopping {
+    font-size: 1.5rem;
+    color: #34495e;
+    transition: color 0.3s;
+}
+
+.navbar .fa-cart-shopping:hover {
+    color: #1abc9c;
+}
